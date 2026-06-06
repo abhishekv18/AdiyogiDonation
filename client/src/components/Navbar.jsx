@@ -1617,7 +1617,7 @@ export default function Navbar() {
                 </div>
 
                 <div className="mobile-footer">
-                  <p>100% secure giving — every rupee reaches those who need it most.</p>
+                  <p>100% secure giving — every rupee reaches those who need it.</p>
                 </div>
               </motion.div>
             </>
