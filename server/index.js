@@ -10,6 +10,7 @@ import contactRouter from "./routes/conatct.route.js";
 import sponserRouter from "./routes/sponser.route.js";
 import galleryRouter from "./routes/gallery.route.js";
 import paymentRouter from "./routes/payment.route.js";
+import guestRouter from "./routes/guest.route.js";
 const app = express();
 
 
@@ -31,6 +32,7 @@ app.use("/api/contact",contactRouter);
 app.use("/api/sponsor",sponserRouter);
 app.use("/api/gallery",galleryRouter);
 app.use("/api/payment",paymentRouter);
+app.use("/api/guest",guestRouter);
 const PORT=process.env.PORT || 6000;
 app.listen(PORT,()=>{
     console.log(`Server is running on port ${PORT}`);

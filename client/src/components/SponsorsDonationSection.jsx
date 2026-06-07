@@ -3000,39 +3000,68 @@ export default function SponsorsDonationSection() {
         @media (min-width: 640px) {
           .sp-marquee-track { gap: 16px; }
         }
+        // .sp-logo-card {
+        //   display: inline-flex; align-items: center; justify-content: center;
+        //   min-width: 140px; height: 70px;
+        //   border-radius: 12px;
+        //   background: #fff;
+        //   border: 1px solid var(--border);
+        //   box-shadow: 0 4px 18px rgba(30,41,59,0.05);
+        //   padding: 10px 16px;
+        //   transition: box-shadow 0.3s, transform 0.3s, border-color 0.3s;
+        //   text-decoration: none; flex-shrink: 0;
+        // }
+        // @media (min-width: 640px) {
+        //   .sp-logo-card { min-width: 160px; height: 76px; padding: 12px 20px; border-radius: 14px; }
+        // }
+        // @media (min-width: 1024px) {
+        //   .sp-logo-card { min-width: 170px; height: 80px; padding: 14px 22px; border-radius: 16px; }
+        // }
+        // .sp-logo-card:hover {
+        //   box-shadow: 0 10px 32px rgba(30,41,59,0.10);
+        //   transform: translateY(-3px);
+        //   border-color: rgba(216,27,74,0.15);
+        // }
+        // .sp-logo-img {
+        //   max-height: 32px; max-width: 110px;
+        //   object-fit: contain;
+        //   transition: filter 0.3s;
+        // }
+        // @media (min-width: 640px) {
+        //   .sp-logo-img { max-height: 36px; max-width: 120px; }
+        // }
+        // @media (min-width: 1024px) {
+        //   .sp-logo-img { max-height: 40px; max-width: 130px; }
+        // }
         .sp-logo-card {
-          display: inline-flex; align-items: center; justify-content: center;
-          min-width: 140px; height: 70px;
-          border-radius: 12px;
-          background: #fff;
-          border: 1px solid var(--border);
-          box-shadow: 0 4px 18px rgba(30,41,59,0.05);
-          padding: 10px 16px;
-          transition: box-shadow 0.3s, transform 0.3s, border-color 0.3s;
-          text-decoration: none; flex-shrink: 0;
-        }
-        @media (min-width: 640px) {
-          .sp-logo-card { min-width: 160px; height: 76px; padding: 12px 20px; border-radius: 14px; }
-        }
-        @media (min-width: 1024px) {
-          .sp-logo-card { min-width: 170px; height: 80px; padding: 14px 22px; border-radius: 16px; }
-        }
-        .sp-logo-card:hover {
-          box-shadow: 0 10px 32px rgba(30,41,59,0.10);
-          transform: translateY(-3px);
-          border-color: rgba(216,27,74,0.15);
-        }
-        .sp-logo-img {
-          max-height: 32px; max-width: 110px;
-          object-fit: contain;
-          transition: filter 0.3s;
-        }
-        @media (min-width: 640px) {
-          .sp-logo-img { max-height: 36px; max-width: 120px; }
-        }
-        @media (min-width: 1024px) {
-          .sp-logo-img { max-height: 40px; max-width: 130px; }
-        }
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 150px; height: 76px;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 18px rgba(30,41,59,0.05);
+  padding: 10px 16px;
+  transition: box-shadow 0.3s, transform 0.3s, border-color 0.3s;
+  text-decoration: none; flex-shrink: 0;
+}
+@media (min-width: 640px) {
+  .sp-logo-card { min-width: 170px; height: 80px; padding: 12px 20px; border-radius: 14px; }
+}
+@media (min-width: 1024px) {
+  .sp-logo-card { min-width: 180px; height: 84px; padding: 14px 22px; border-radius: 16px; }
+}
+
+.sp-logo-img {
+  max-height: 36px; max-width: 115px;
+  object-fit: contain;
+  transition: filter 0.3s;
+}
+@media (min-width: 640px) {
+  .sp-logo-img { max-height: 40px; max-width: 125px; }
+}
+@media (min-width: 1024px) {
+  .sp-logo-img { max-height: 44px; max-width: 135px; }
+}
         .sp-logo-card:hover .sp-logo-img { filter: grayscale(0) opacity(1); }
 
         /* ── divider ── */

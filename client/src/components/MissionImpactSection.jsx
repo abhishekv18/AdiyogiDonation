@@ -522,7 +522,7 @@ import { HiOutlineSparkles } from "react-icons/hi2";
 
 /* ── assets ─────────────────────────────────────────────── */
 const missionImage =
-  "https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=1200&q=85";
+  "/Donation3 (2).png";
 
 const impactStats = [
   { value: 10000, suffix: "+", label: "Lives Impacted",       description: "People reached through care, relief, and community support.", icon: FiUsers    },
