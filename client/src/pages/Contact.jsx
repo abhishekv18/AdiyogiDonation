@@ -831,8 +831,8 @@ import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import toast from "react-hot-toast";
 
-const API_BASE_URL = "http://localhost:8000";
-
+//const API_BASE_URL = "http://localhost:8000";
+const API_BASE_URL = "https://adiyogidonation.onrender.com";
 /* ── data ───────────────────────────────────────────────── */
 const contactItems = [
   { label: "Address",       value: "Adiyogi Foundation, Pilkhua, Hapur, Uttar Pradesh — 245304", href: "https://maps.google.com", icon: FiMapPin, color: "#D81B4A", bg: "rgba(216,27,74,0.06)", border: "rgba(216,27,74,0.12)" },

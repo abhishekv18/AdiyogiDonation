@@ -737,8 +737,8 @@ import { FiMenu, FiX, FiChevronDown, FiHeart } from "react-icons/fi";
 import axios from "axios";
 import logo from "/Adiyogi Foundation (1).jpeg";
 
-const ServerUrl = "http://localhost:8000";
-
+//const ServerUrl = "http://localhost:8000";
+const ServerUrl="https://adiyogidonation.onrender.com";
 const navLinks = [
   { label: "Success Stories", href: "/success-stories" },
   { label: "Contact", href: "/contact" },

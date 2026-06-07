@@ -14,7 +14,8 @@ import { Toaster } from 'react-hot-toast'
 import ProtectedRoute from './components/ProtectedRoute'
 import AdminDashboard from './pages/AdminDashboard'
 import WhatsAppButton from './components/WhatsappButton'
-export const ServerUrl="http://localhost:8000";
+//export const ServerUrl="http://localhost:8000";
+export const ServerUrl="https://adiyogidonation.onrender.com";
 const App = () => {
 
   const dispatch=useDispatch();

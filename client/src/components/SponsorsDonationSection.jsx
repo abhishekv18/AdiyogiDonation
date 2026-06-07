@@ -2473,8 +2473,8 @@ import {
 import toast, { Toaster } from 'react-hot-toast';
 import { ServerUrl } from "../App";
 
-const API_BASE_URL = "http://localhost:8000";
-
+//const API_BASE_URL = "http://localhost:8000";
+const API_BASE_URL = "https://adiyogidonation.onrender.com";
 const fallbackSponsors = [
   { _id: "1", name: "Lotus Health Trust",  img: "https://dummyimage.com/220x70/f8fafc/64748b&text=Lotus+Trust",  website: "#", category: "Healthcare" },
   { _id: "2", name: "Greenleaf Partners",  img: "https://dummyimage.com/220x70/f8fafc/64748b&text=Greenleaf",    website: "#", category: "Environment" },

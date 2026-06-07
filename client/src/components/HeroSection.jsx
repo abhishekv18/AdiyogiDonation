@@ -523,8 +523,8 @@ import axios from "axios";
 import { AnimatePresence, motion } from "framer-motion";
 import { FiArrowLeft, FiArrowRight, FiHeart, FiShield, FiUsers } from "react-icons/fi";
 
-const API_BASE_URL = "http://localhost:8000";
-
+//const API_BASE_URL = "http://localhost:8000";
+const API_BASE_URL="https://adiyogidonation.onrender.com";
 /* ── helper: wrap index ─────────────────────────────────── */
 const wrap = (i, len) => ((i % len) + len) % len;
 
