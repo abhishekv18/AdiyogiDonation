@@ -525,7 +525,7 @@ const missionImage =
   "/Donation3 (2).png";
 
 const impactStats = [
-  { value: 10000, suffix: "+", label: "Lives Impacted",       description: "People reached through care, relief, and community support.", icon: FiUsers    },
+  { value: 203000, suffix: "+", label: "Lives Impacted",       description: "People reached through care, relief, and community support.", icon: FiUsers    },
   { value: 500,   suffix: "+", label: "Active Donors",        description: "Supporters contributing to meaningful, lasting change.",        icon: FiHeart    },
   { value: 150,   suffix: "+", label: "Community Programs",   description: "Initiatives designed around real, verified local needs.",       icon: FiTrendingUp },
   { value: 50,    suffix: "+", label: "Partner Organizations",description: "Collaborations helping scale trusted, transparent impact.",     icon: FiShield   },

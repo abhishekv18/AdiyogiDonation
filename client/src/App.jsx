@@ -14,6 +14,10 @@ import { Toaster } from 'react-hot-toast'
 import ProtectedRoute from './components/ProtectedRoute'
 import AdminDashboard from './pages/AdminDashboard'
 import WhatsAppButton from './components/WhatsappButton'
+import TermsAndConditions from './components/terms-and-conditions'
+import CookiePolicy from './components/cookie-policy'
+
+
 //export const ServerUrl="http://localhost:8000";
 export const ServerUrl="https://adiyogidonation.onrender.com";
 const App = () => {
@@ -58,6 +62,8 @@ useEffect(() => {
     <Route path="/" element={<HomePage/>} />
     <Route path="/success-stories" element={<SuccessStoriesPage/>} />
     <Route path="/contact" element={<ContactPage/>} />
+    <Route path="/terms-and-conditions" element={<TermsAndConditions/>} />
+    <Route path="/cookie-policy" element={<CookiePolicy/>} />
     <Route path="/admin-login" element={<AdminLoginPage/>} />
 
      <Route path='/admin/dashboard'  

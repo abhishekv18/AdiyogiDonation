@@ -8,7 +8,7 @@ const WhatsAppButton = () => {
   const location = useLocation();
 
   // Block on admin pages
-  const blockedRoutes = ["/admin", "/blogs/"];
+  const blockedRoutes = ["/admin", "/blogs/","/terms-and-conditions", "/cookie-policy"];
 
   const isBlockedRoute = blockedRoutes.some((route) =>
     location.pathname.startsWith(route)

@@ -1101,7 +1101,7 @@ const AdminLoginPage = () => {
                 <p className="al-form-sub">Sign in to begin your sacred duties</p>
               </div>
 
-              <div className="al-divider" />
+              {/* <div className="al-divider" /> */}
 
               <form onSubmit={handleSubmit} noValidate>
                 {/* email */}
