@@ -514,7 +514,7 @@ const quickLinks = [
   { label: "Home",            href: "/"                },
   { label: "Success Stories", href: "/success-stories" },
   { label: "Contact",         href: "/contact"         },
-  { label: "Donate",          href: "#donate"          },
+  // { label: "Donate",          href: "#donate"          },
    { label: "Terms & Conditions", href: "/terms-and-conditions" },
   { label: "Cookie Policy",      href: "/cookie-policy"        },
 ];
