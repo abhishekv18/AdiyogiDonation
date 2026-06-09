@@ -15,7 +15,13 @@ const app = express();
 
 
 const corsOptions = {
-    origin: ['http://localhost:5173',"https://adiyogi-donation.vercel.app","https://www.adiyogifoundation.org"],
+   // origin: ['http://localhost:5173',"https://adiyogi-donation.vercel.app","https://www.adiyogifoundation.org"],
+   origin: [
+  "http://localhost:5173",
+  "https://adiyogi-donation.vercel.app",
+  "https://adiyogifoundation.org",
+  "https://www.adiyogifoundation.org",
+],
     credentials: true,
 };
 
