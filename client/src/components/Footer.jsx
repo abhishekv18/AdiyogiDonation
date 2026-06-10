@@ -924,7 +924,7 @@ export default function Footer() {
               </a>
 
               <p className="ft-body mx-auto sm:mx-0">
-                Dedicated to temple restoration, Bhandara seva, and uplifting
+                Dedicated to temple restoration, Anna seva, and uplifting
                 those in need — through compassion, transparency, and dharma.
               </p>
             </motion.div>

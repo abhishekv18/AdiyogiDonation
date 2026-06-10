@@ -2785,7 +2785,7 @@ import {
 import axios from "axios";
 import { motion, AnimatePresence } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { toast, Toaster } from "react-hot-toast";
+import { toast } from "react-hot-toast";
 import { useDispatch, useSelector } from "react-redux";
 import { setUserData } from "../redux/userSlice";
 
@@ -4062,7 +4062,13 @@ export default function AdiyogiAdminPanel() {
       navigate("/");
     }
   }, [userData, navigate]);
-
+// Add this inside your AdiyogiAdminPanel component
+useEffect(() => {
+  // Cleanup: dismiss all toasts when component unmounts
+  return () => {
+    toast.dismiss();
+  };
+}, []);
   const [authLoading, setAuthLoading] = useState(true);
   const [adminUser, setAdminUser] = useState(null);
   const [activeSection, setActiveSection] = useState("dashboard");
@@ -4215,19 +4221,45 @@ export default function AdiyogiAdminPanel() {
     setGuestForm({ name: "", phone: "", location: "" });
   }, []);
 
-  const handleLogout = async () => {
-    try {
-      await axios.post(ServerUrl + endpoints.logout, {}, { withCredentials: true });
-      toast.success("Logged out successfully");
+  // const handleLogout = async () => {
+  //   try {
+  //     await axios.post(ServerUrl + endpoints.logout, {}, { withCredentials: true });
+  //     toast.success("Logged out successfully");
+  //     dispatch(setUserData(null));
+  //     setAdminUser(null);
+  //     navigate("/");
+  //   } catch (error) {
+  //     console.log(error);
+  //     toast.error("Logout failed");
+  //   }
+  // };
+const handleLogout = async () => {
+  // Dismiss all existing toasts immediately
+  toast.dismiss();
+  
+  try {
+    await axios.post(ServerUrl + endpoints.logout, {}, { withCredentials: true });
+    
+    // Show success toast with short duration
+    toast.success("Logged out successfully", {
+      duration: 1500,
+      position: "top-center",
+    });
+    
+    // Small delay to show the toast before navigation
+    setTimeout(() => {
       dispatch(setUserData(null));
       setAdminUser(null);
       navigate("/");
-    } catch (error) {
-      console.log(error);
-      toast.error("Logout failed");
-    }
-  };
-
+    }, 1000);
+    
+  } catch (error) {
+    console.log(error);
+    toast.error("Logout failed", {
+      duration: 3000,
+    });
+  }
+};
   const removeResource = async (endpoint, id, onSuccess) => {
     try {
       await axios.delete(ServerUrl + endpoint + "/" + id, {
@@ -5690,13 +5722,13 @@ export default function AdiyogiAdminPanel() {
 
   return (
     <div className="min-h-screen bg-slate-50">
-      <Toaster 
+      {/* <Toaster 
         position="top-right"
         toastOptions={{
           className: 'text-sm',
           duration: 3000,
         }}
-      />
+      /> */}
       
       <Sidebar />
 
