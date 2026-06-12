@@ -18,13 +18,13 @@ export const addGuest = async (req, res) => {
                 success: false
             });
         }
-      const guestExists = await Bhandara.findOne({ phone });
-      if(guestExists){
-        return res.status(400).json({
-            message: "Guest with this phone number already registered",
-            success: false
-        });
-      }
+    //   const guestExists = await Bhandara.findOne({ phone });
+    //   if(guestExists){
+    //     return res.status(400).json({
+    //         message: "Guest with this phone number already registered",
+    //         success: false
+    //     });
+    //   }
         // Create a new volunteer object
         const guest = new Bhandara({
             name,

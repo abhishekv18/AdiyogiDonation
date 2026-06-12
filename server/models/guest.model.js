@@ -31,7 +31,7 @@ const bhandaraSchema = new mongoose.Schema(
     phone: {
       type: String,
       required: true,
-      unique: true,
+      //unique: true,
       trim: true,
     },
     location: {

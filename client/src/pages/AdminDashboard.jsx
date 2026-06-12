@@ -2942,7 +2942,7 @@ const ChartCard = ({ title, children, chartRef, filename, className = "" }) => {
                           );
                           
                           if (uploadResponse.data.success) {
-                            const cloudUrl = uploadResponse.data.result.url;
+                            const cloudUrl = uploadResponse.data.result.secure_url;
                             setUploadedGalleryImageUrl(cloudUrl);
                             
                             try {
@@ -3158,7 +3158,7 @@ const ChartCard = ({ title, children, chartRef, filename, className = "" }) => {
                           );
                           
                           if (uploadResponse.data.success) {
-                            setUploadedSponsorImageUrl(uploadResponse.data.result.url);
+                            setUploadedSponsorImageUrl(uploadResponse.data.result.secure_url);
                             toast.success("Image uploaded successfully");
                           }
                         } catch (error) {

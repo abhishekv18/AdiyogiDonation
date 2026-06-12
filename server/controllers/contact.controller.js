@@ -25,13 +25,13 @@ export const addContact = async (req, res) => {
                 success: false
             });
         }
-      const contactExists = await Contact.findOne({ email });
-      if(contactExists){
-        return res.status(400).json({
-            message: "Contact with this email already registered",
-            success: false
-        });
-      }
+    //   const contactExists = await Contact.findOne({ email });
+    //   if(contactExists){
+    //     return res.status(400).json({
+    //         message: "Contact with this email already registered",
+    //         success: false
+    //     });
+    //   }
         // Create a new volunteer object
         const contact = new Contact({
             name,

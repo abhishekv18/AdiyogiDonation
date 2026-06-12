@@ -515,12 +515,12 @@ const quickLinks = [
   { label: "Success Stories", href: "/success-stories" },
   { label: "Contact",         href: "/contact"         },
   // { label: "Donate",          href: "#donate"          },
-   { label: "Terms & Conditions", href: "/terms-and-conditions" },
+   { label: "Privacy Terms & Conditions", href: "/terms-and-conditions" },
   { label: "Cookie Policy",      href: "/cookie-policy"        },
 ];
 
 const policyLinks = [
-  { label: "Terms & Conditions", href: "/terms-and-conditions" },
+  { label: "Privacy Terms & Conditions", href: "/terms-and-conditions" },
   { label: "Cookie Policy",      href: "/cookie-policy"        },
 ];
 
@@ -1024,7 +1024,7 @@ export default function Footer() {
               "Seva is the highest form of worship."
             </span>
             <p>
-              <a href="/terms-and-conditions" className="ft-policy-link">Terms & Conditions</a>
+              <a href="/terms-and-conditions" className="ft-policy-link">Privacy Terms & Conditions</a>
               <span className="ft-policy-separator">|</span>
               <a href="/cookie-policy" className="ft-policy-link">Cookie Policy</a>
               <span className="hidden sm:inline"> • Made with <span style={{ color: "#D81B4A" }}>❤️</span> by Abhishek</span>

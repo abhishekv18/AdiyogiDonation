@@ -98,6 +98,7 @@ import AdminDashboard from './pages/AdminDashboard'
 import WhatsAppButton from './components/WhatsappButton'
 import TermsAndConditions from './components/terms-and-conditions'
 import CookiePolicy from './components/cookie-policy'
+import Cookie from './components/cookie'
 
 //export const ServerUrl="http://localhost:8000";
 export const ServerUrl="https://adiyogidonation.onrender.com";
@@ -169,7 +170,7 @@ const App = () => {
       />
       
       <ScrollToTop />
-      
+        <Cookie/>
       <Routes>
         <Route path="/" element={<HomePage/>} />
         <Route path="/success-stories" element={<SuccessStoriesPage/>} />
@@ -188,6 +189,7 @@ const App = () => {
       </Routes>
       
       <WhatsAppButton />
+    
     </>
   )
 }
